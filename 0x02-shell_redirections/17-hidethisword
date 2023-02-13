@@ -1,2 +1,2 @@
 #!/bin/bash
-grep -o '^[^:]*' /etc/passwd | xargs -L1 id
+grep -v bin /etc/passwd
