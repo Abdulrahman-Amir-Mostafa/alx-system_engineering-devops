@@ -1,2 +1,2 @@
 #!/bin/bash
-sed '1~2!d'
+head -n 1; tail -n +2 | grep -n -v '^1:'
